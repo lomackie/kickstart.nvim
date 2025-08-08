@@ -11,7 +11,11 @@ return {
   },
   lazy = false,
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<leader>x', ':Neotree toggle current reveal_force_cwd<CR>', desc = 'NeoTree toggle cwd', silent = true },
+    { '|', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { 'gd', ':Neotree float reveal_file=<cfile> reveal_force_cwd<CR>', desc = 'NeoTree reveal file', silent = true },
+    { '<leader>b', ':Neotree toggle show buffers right<CR>', desc = 'NeoTree buffers', silent = true },
+    { '<leader>g', ':Neotree float git_status<CR>', desc = 'NeoTree git status', silent = true },
   },
   opts = {
     filesystem = {
